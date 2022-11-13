@@ -18,9 +18,17 @@ documentation:
   discord:      "AlanGreen#3623"  # Your discord handle
   title:        "Siren"           # Project title
   description:  "An annoying two-tone siren straight from the 1970s"      # Short description of what your project does
-  how_it_works: ""      # Longer description of how the project works
-  how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  "In order to hear the tone, requires a speaker connected to digital output 7"      # Describe any external hardware needed
+  how_it_works: >
+    A long chain of D flip flops divides down the clock to produce square waves of 
+    various frequencies. Some of the higher frequencies are used to produce the tones
+    while the lower frequencies are used to produce timing control signals, to vary
+    the tone.
+  how_to_test: >
+    Because there are no inputs, testing this is simply a matter of connecting a 
+    speaker to digital output 7, and standing back.
+  external_hw: >
+    For the audio output on pin 7, either use an audio amplifier or, if bravely
+    connecting a speaker directly, place a resistor in series to limit the current.
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     12500       # Clock frequency in Hz (if required)
