@@ -17,15 +17,21 @@ documentation:
   author:       "Alan Green"      # Your name
   discord:      "AlanGreen#3623"  # Your discord handle
   title:        "Siren"           # Project title
-  description:  "An annoying two-tone siren straight from the 1970s"      # Short description of what your project does
+  description:  "Pretty patterns and a siren straight from the 1970s"      # Short description of what your project does
   how_it_works: >
-    A long chain of D flip flops divides down the clock to produce square waves of 
-    various frequencies. Some of the higher frequencies are used to produce the tones
-    while the lower frequencies are used to produce timing control signals, to vary
-    the tone.
+    A long chain of D flip flops divides down the clock to produce a range of frequencies 
+    that are used for various purposes.
+    
+    Some of the higher frequencies are used to produce the tones. Lower frequencies are
+    used to control the patterns of lights and to change the tones being sent to the speaker.
+    
+    An interesting part of the project is a counter that counts to 5 and resets to zero.
+    This is used for one of the two patterns of lights, where the period of pattern is six.
+    
   how_to_test: >
-    Because there are no inputs, testing this is simply a matter of connecting a 
-    speaker to digital output 7, and standing back.
+    Connect a speaker to the last digital output pin, the one which is also connected to
+    the decimal point on the seven segment display. Switch 8 is used to select between two
+    groups of patterns.
   external_hw: >
     For the audio output on pin 7, either use an audio amplifier or, if bravely
     connecting a speaker directly, place a resistor in series to limit the current.
@@ -41,7 +47,7 @@ documentation:
     - none
     - none
     - none
-    - none
+    - pattern_select
   outputs:
     - segment a         # a description of what the outputs do
     - segment b
