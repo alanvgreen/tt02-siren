@@ -1,5 +1,18 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
+# This is a Tiny Tapeout project
+
+It implements a simple, annoying two-tone siren and makes patterns on a seven segment display.
+
+This project is implemented in wokwi. The best way to understand what it does is to use the simulation: 
+
+1. Go to https://wokwi.com/projects/348242239268323922
+2. Press the Play Button.
+3. Change the setting of switch 8 to change between the two kinds of patterns.
+
+The remainder of this file is the README from the submission template.
+
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
